@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swoosh-lesson03.iml" filepath="$PROJECT_DIR$/.idea/modules/swoosh-lesson03.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/swoosh-lesson03.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/swoosh-lesson03.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swoosh.iml" filepath="$PROJECT_DIR$/.idea/modules/swoosh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/swoosh.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/swoosh.app.iml" />
     </modules>
   </component>
 </project>
