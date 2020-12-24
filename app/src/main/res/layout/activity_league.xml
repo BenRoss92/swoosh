@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jonnyb.swoosh.LeagueActivity">
+    tools:context="com.example.jonnyb.swoosh.controller.LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -82,8 +82,7 @@
             android:text="@string/womens"
             android:textColor="@android:color/white"
             android:textOff="@string/womens"
-            android:textOn="@string/womens"
-            android:textStyle="bold" />
+            android:textOn="@string/womens" />
 
         <ToggleButton
             android:id="@+id/coEdLeagueBtn"

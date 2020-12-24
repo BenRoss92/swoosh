@@ -1,9 +1,11 @@
-package com.example.jonnyb.swoosh
+package com.example.jonnyb.swoosh.controller
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.jonnyb.swoosh.R
+import com.example.jonnyb.swoosh.utilities.EXTRA_LEAGUE
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity() {
@@ -37,7 +39,7 @@ class LeagueActivity : BaseActivity() {
     }
 
     fun leagueNextClicked(view: View) {
-        if (selectedLeague !== "") {
+        if (selectedLeague != "") {
             val skillActivity = Intent(this, SkillActivity::class.java)
             skillActivity.putExtra(EXTRA_LEAGUE, selectedLeague)
 
