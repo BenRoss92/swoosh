@@ -14,6 +14,19 @@ class SkillActivity : BaseActivity() {
     // We want this variable to be available to all class methods, but we can't assign a value until the activity is created. We can use 'lateinit' to promise that we will initialise this Player instance later on when onCreate is called (i.e. when the activity is initialised).
     lateinit var player : Player
 
+    // Overriding onSaveInstanceState and onRestoreInstanceState lifecycle methods to save player information if screen is rotated - see comment in LeagueActivity for explanation.
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        outState?.putParcelable(EXTRA_PLAYER, player)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState != null) {
+            player = savedInstanceState.getParcelable(EXTRA_PLAYER)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
